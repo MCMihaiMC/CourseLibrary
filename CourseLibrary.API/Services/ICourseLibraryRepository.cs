@@ -13,7 +13,7 @@ namespace CourseLibrary.API.Services
         void DeleteCourse(Course course);
 
         IEnumerable<Author> GetAuthors();
-        IEnumerable<Author> GetAuthors(string mainCategory);
+        IEnumerable<Author> GetAuthors(string mainCategory, string searchQuery);
         Author GetAuthor(Guid authorId);
         IEnumerable<Author> GetAuthors(IEnumerable<Guid> authorIds);
         void AddAuthor(Author author);
